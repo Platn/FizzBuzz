@@ -1,0 +1,51 @@
+
+public class FizzBuzz
+{
+   public static void main (String[] args)
+   {
+      //System.out.println(");
+      int Fizz = 0;
+      int Buzz = 0;
+      for (int i = 0; i <= 30; i++) //Loop through all numbers
+      {
+         if (i%3 == 0 && i%5 == 0) //Divisible by 3 & 5
+         {
+            System.out.println("FizzBuzz " + i);
+            Fizz++;
+            Buzz++;
+         }
+         else
+         {
+            if (i%3 == 0) //Divisible by 3
+            {
+               System.out.println("Fizz " + i);
+               Fizz++;
+            }
+            if (i%5 == 0) //Divisible by 5
+            {
+               System.out.println("Buzz " + i);
+               Buzz++;
+            }
+            else if (i%5 != 0 && i%3 != 0) //All numbers not divisible
+            {
+               System.out.println(i);
+            }
+         }
+      }
+      /* Counter for each quotient */
+      if (Fizz > Buzz)
+      {
+         System.out.println("More Fizz, Less Buzz");
+      }
+      else if(Buzz > Fizz)
+      {
+         System.out.println("More Buzz, Less Fizz");
+      }
+      else if (Buzz == Fizz)
+      {
+         System.out.println("Fizz = Buzz");
+      }
+   }
+
+}
+//Learn how to reverse a string
